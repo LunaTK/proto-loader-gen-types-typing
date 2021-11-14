@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@grpc/proto-loader": "^0.6.6",
+    "@grpc/proto-loader": "0.6.6",
     "typescript": "4.2.4"
   },
   "scripts": {
     "build": "proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=proto/ proto/rpc.proto"
   },
   "dependencies": {
-    "@grpc/grpc-js": "1.3.8"
+    "@grpc/grpc-js": "1.4.4"
   }
 }
