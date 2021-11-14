@@ -20,5 +20,5 @@ type MyMethodType = InstanceType<ProtoGrpcType['MyService']>['MyMethod']
 // evaluated as true
 type IsProtoLoaderMethod = MyMethodType extends ProtoLoaderGrpcMethod<infer Req, infer Res> ? true : never
 
-// evaluated as never
+// evaluated as never, but I expect it to be true
 type IsGrpcJsMethod = MyMethodType extends GrpcJsGrpcMethod<infer Req, infer Res> ? true : never
